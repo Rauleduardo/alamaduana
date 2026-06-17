@@ -1,0 +1,228 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #8B0000 !important;
+}
+
+.nav-link {
+    color: #8B0000 !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.navbar-toggler-al{
+    background-color: #8B0000 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color:  #1e3c72;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideDown 0.8s ease;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.btn-custom {
+    background-color: #ffc107;
+    color: #1e3c72;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #ffb300;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,193,7,0.4);
+    color: #1e3c72;
+}
+
+/* Carousel */
+.carousel-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #1e3c72;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #ffc107;
+    border-radius: 2px;
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(30,60,114,0.2);
+}
+
+.card-custom .card-body {
+    padding: 25px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Form */
+.form-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 0;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    padding: 12px 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #1e3c72;
+    box-shadow: 0 0 0 0.2rem rgba(30,60,114,0.15);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 12px 40px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(30,60,114,0.3);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #1e3c72 100%);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.alert-custom {
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
